@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "9de5f38d-68fe-4d61-8c1f-6ad98a5d5ea4",
+		"name": "recipessapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50048584",
+		"_collection_link": "https://karenglezschez-8727230.postman.co/workspace/Karen-gs's-Workspace~b4c04eb3-9014-4522-88a7-ed7ac188051d/collection/50048584-9de5f38d-68fe-4d61-8c1f-6ad98a5d5ea4?action=share&source=collection_link&creator=50048584"
+	},
+	"item": [
+		{
+			"name": "GET/recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/recipes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/recipe/id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Tiramisú con Chocolate\",\r\n  \"ingredients\": \"200g de bizcochos de soletilla, 250g de queso mascarpone, 3 huevos, 75g de azúcar, 200ml de café frío, 50g de chocolate rallado, cacao en polvo para espolvorear, 1 chorrito de licor (opcional)\",\r\n  \"instructions\": \"Separar claras y yemas. Batir las yemas con el azúcar hasta que blanqueen. Añadir el mascarpone y mezclar. Montar las claras a punto de nieve e incorporarlas suavemente. Mojar los bizcochos en café y colocarlos en una fuente. Cubrir con la crema de mascarpone y espolvorear chocolate rallado. Repetir capas y espolvorear cacao por encima. Refrigerar mínimo 4 horas antes de servir.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/recipe/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipe",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/recipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Tostadas de Aguacate\",\r\n  \"ingredients\": \"2 rebanadas de pan integral, 1 aguacate maduro, 1 chorrito de aceite de oliva, sal al gusto, pimienta al gusto, zumo de medio limón\",\r\n  \"instructions\": \"Tostar el pan. Machacar el aguacate y mezclar con limón, sal, pimienta y aceite. Untar sobre el pan y servir.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/recipes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT/modify/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Tiramisú con Chocolate\",\r\n  \"ingredients\": \"200g de bizcochos de soletilla, 250g de queso mascarpone, 3 huevos, 75g de azúcar, 200ml de café frío, 50g de chocolate rallado, cacao en polvo para espolvorear, 1 chorrito de licor (opcional)\",\r\n  \"instructions\": \"Separar claras y yemas. Batir las yemas con el azúcar hasta que blanqueen. Añadir el mascarpone y mezclar. Montar las claras a punto de nieve e incorporarlas suavemente. Mojar los bizcochos en café y colocarlos en una fuente. Cubrir con la crema de mascarpone y espolvorear chocolate rallado. Repetir capas y espolvorear cacao por encima. Refrigerar mínimo 4 horas antes de servir.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/modify/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"modify",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH/delete/id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/delete/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/signupUSER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name_user\": \"Ana\", \r\n    \"email\": \"mail2@mail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST/loginUSER",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
