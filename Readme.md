@@ -27,35 +27,22 @@
 ---
 
 ## Estructura del proyecto
-
+```
 backend/
-
 ├─ src/
-
 │  ├─ controllers/
-
 │  ├─ database/
-
 │  ├─ middlewares/
-
 │  └─ utils
-
 frontend/
-
 ├─ src/
-
 │  ├─ components/
-
 │  ├─ contexts
-
 │  ├─ pages/
-
 │  ├─ services/
-
 │  └─ styles/
-
 recipessapp.postman_collection.json
-
+```
 ---
 
 ## Endpoints principales (backend)
